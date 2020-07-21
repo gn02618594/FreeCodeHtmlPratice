@@ -1,8 +1,6 @@
 <!--題目-->
 <!--
-img 應該要使用 thick-green-border 這個 class
-img 應該要有 border radius 10px
-border-radius 可以修飾邊框的角 讓角不是尖的
+給 form elements 一個 id 命名為 cat-photo-form
 -->
 
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -24,10 +22,15 @@ border-radius 可以修飾邊框的角 讓角不是尖的
     border-color: green;
     border-width: 10px;
     border-style: solid;
+    border-radius: 50%;
   }
 
   .smaller-image {
     width: 100px;
+  }
+
+  .silver-background {
+    background-color: silver;
   }
 </style>
 
@@ -37,7 +40,7 @@ border-radius 可以修飾邊框的角 讓角不是尖的
 
   <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
-  <div>
+  <div class="silver-background">
     <p>Things cats love:</p>
     <ul>
       <li>cat nip</li>
@@ -85,11 +88,15 @@ border-radius 可以修飾邊框的角 讓角不是尖的
     border-color: green;
     border-width: 10px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 50%;
   }
 
   .smaller-image {
     width: 100px;
+  }
+
+  .silver-background {
+    background-color: silver;
   }
 </style>
 
@@ -99,7 +106,7 @@ border-radius 可以修飾邊框的角 讓角不是尖的
 
   <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
-  <div>
+  <div class="silver-background">
     <p>Things cats love:</p>
     <ul>
       <li>cat nip</li>
@@ -114,7 +121,7 @@ border-radius 可以修飾邊框的角 讓角不是尖的
     </ol>
   </div>
 
-  <form action="https://freecatphotoapp.com/submit-cat-photo">
+  <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
     <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
     <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
     <label><input type="checkbox" name="personality" checked> Loving</label>
