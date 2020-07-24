@@ -1,0 +1,88 @@
+<!--題目-->
+<!--
+margin-top, margin-right, margin-bottom,margin-left
+可以針對不同邊改
+把藍色的上跟左 改成 40px
+把藍色的下跟右 改成 20px
+
+但是只用一行
+順序是上右下左
+example: margin: 10px 20px 10px 20px;
+-->
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    margin: 20px 40px 20px 40px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+
+
+
+<!--解答-->
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    margin: 20px 40px 20px 40px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    margin: 40px 20px 20px 40px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
