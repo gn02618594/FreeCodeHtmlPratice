@@ -1,0 +1,48 @@
+<!--題目-->
+<!--
+h1 有使用 class: pink-text
+h1 有使用 class: blue-text
+h1 有使用 id: orange-text
+h1 有在自己標籤內宣告 style 設定 color white
+class: pink-text 在 color:pink 後 多加 !important
+h1 最後為 粉紅色
+-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
+
+
+<!--解答-->
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink!important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
