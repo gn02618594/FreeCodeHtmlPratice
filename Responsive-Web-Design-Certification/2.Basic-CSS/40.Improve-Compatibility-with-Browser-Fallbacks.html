@@ -1,0 +1,33 @@
+<!--題目-->
+<!--
+.red-box 使用了 --red-color 但要在 background 之前在宣告一個 background
+當瀏覽器不支援原先設置的顏色時代替
+-->
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>
+
+<!--解答-->
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div>

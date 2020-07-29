@@ -1,65 +1,34 @@
 <!--題目-->
 <!--
-class: penguin 的 penguin-skin 改為 gray
-class: penguin 的 penguin-belly 改為 white
-class: penguin 的 penguin-beak 改為 orange
+在 media
+ :root 中 --penguin-size 中改為 200px
+ :root 中 --penguin-skin  中改為 black
+
 -->
 
 <style>
+  :root {
+    --penguin-size: 300px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+
+  @media (max-width: 350px) {
+    :root {
+      /* Only change code below this line */
+
+      /* Only change code above this line */
+    }
+  }
+
   .penguin {
-
-    /* Only change code below this line */
-    --penguin-skin: black;
-    --penguin-belly: gray;
-    --penguin-beak: yellow;
-    /* Only change code above this line */
-
     position: relative;
     margin: auto;
     display: block;
     margin-top: 5%;
-    width: 300px;
-    height: 300px;
-  }
-
-  .penguin-top {
-    top: 10%;
-    left: 25%;
-    background: var(--penguin-skin, gray);
-    width: 50%;
-    height: 45%;
-    border-radius: 70% 70% 60% 60%;
-  }
-
-  .penguin-bottom {
-    top: 40%;
-    left: 23.5%;
-    background: var(--penguin-skin, gray);
-    width: 53%;
-    height: 45%;
-    border-radius: 70% 70% 100% 100%;
-  }
-
-  .right-hand {
-    top: 0%;
-    left: -5%;
-    background: var(--penguin-skin, gray);
-    width: 30%;
-    height: 60%;
-    border-radius: 30% 30% 120% 30%;
-    transform: rotate(45deg);
-    z-index: -1;
-  }
-
-  .left-hand {
-    top: 0%;
-    left: 75%;
-    background: var(--penguin-skin, gray);
-    width: 30%;
-    height: 60%;
-    border-radius: 30% 30% 30% 120%;
-    transform: rotate(-45deg);
-    z-index: -1;
+    width: var(--penguin-size, 300px);
+    height: var(--penguin-size, 300px);
   }
 
   .right-cheek {
@@ -87,6 +56,69 @@ class: penguin 的 penguin-beak 改為 orange
     width: 95%;
     height: 100%;
     border-radius: 120% 120% 100% 100%;
+  }
+
+  .penguin-top {
+    top: 10%;
+    left: 25%;
+    background: var(--penguin-skin, gray);
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .penguin-bottom {
+    top: 40%;
+    left: 23.5%;
+    background: var(--penguin-skin, gray);
+    width: 53%;
+    height: 45%;
+    border-radius: 70% 70% 100% 100%;
+  }
+
+  .right-hand {
+    top: 5%;
+    left: 25%;
+    background: var(--penguin-skin, black);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(130deg);
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    transform-origin: 0% 0%;
+    animation-timing-function: linear;
+  }
+
+  @keyframes wave {
+    10% {
+      transform: rotate(110deg);
+    }
+
+    20% {
+      transform: rotate(130deg);
+    }
+
+    30% {
+      transform: rotate(110deg);
+    }
+
+    40% {
+      transform: rotate(130deg);
+    }
+  }
+
+  .left-hand {
+    top: 0%;
+    left: 75%;
+    background: var(--penguin-skin, gray);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-45deg);
+    z-index: -1;
   }
 
   .right-feet {
@@ -131,10 +163,10 @@ class: penguin 的 penguin-beak 改為 orange
 
   .sparkle {
     top: 25%;
-    left: 15%;
+    left: -23%;
     background: white;
-    width: 35%;
-    height: 35%;
+    width: 150%;
+    height: 100%;
     border-radius: 50%;
   }
 
@@ -175,7 +207,7 @@ class: penguin 的 penguin-beak 改為 orange
   }
 
   body {
-    background:#c6faf1;
+    background: #c6faf1;
   }
 
   .penguin * {
@@ -206,64 +238,32 @@ class: penguin 的 penguin-beak 改為 orange
   </div>
 </div>
 
-
 <!--解答-->
 
 <style>
-  .penguin {
-
-    /* Only change code below this line */
+  :root {
+    --penguin-size: 300px;
     --penguin-skin: gray;
     --penguin-belly: white;
     --penguin-beak: orange;
-    /* Only change code above this line */
+  }
 
+  @media (max-width: 350px) {
+    :root {
+      /* Only change code below this line */
+      --penguin-size: 200px;
+      --penguin-skin: black;
+      /* Only change code above this line */
+    }
+  }
+
+  .penguin {
     position: relative;
     margin: auto;
     display: block;
     margin-top: 5%;
-    width: 300px;
-    height: 300px;
-  }
-
-  .penguin-top {
-    top: 10%;
-    left: 25%;
-    background: var(--penguin-skin, gray);
-    width: 50%;
-    height: 45%;
-    border-radius: 70% 70% 60% 60%;
-  }
-
-  .penguin-bottom {
-    top: 40%;
-    left: 23.5%;
-    background: var(--penguin-skin, gray);
-    width: 53%;
-    height: 45%;
-    border-radius: 70% 70% 100% 100%;
-  }
-
-  .right-hand {
-    top: 0%;
-    left: -5%;
-    background: var(--penguin-skin, gray);
-    width: 30%;
-    height: 60%;
-    border-radius: 30% 30% 120% 30%;
-    transform: rotate(45deg);
-    z-index: -1;
-  }
-
-  .left-hand {
-    top: 0%;
-    left: 75%;
-    background: var(--penguin-skin, gray);
-    width: 30%;
-    height: 60%;
-    border-radius: 30% 30% 30% 120%;
-    transform: rotate(-45deg);
-    z-index: -1;
+    width: var(--penguin-size, 300px);
+    height: var(--penguin-size, 300px);
   }
 
   .right-cheek {
@@ -291,6 +291,69 @@ class: penguin 的 penguin-beak 改為 orange
     width: 95%;
     height: 100%;
     border-radius: 120% 120% 100% 100%;
+  }
+
+  .penguin-top {
+    top: 10%;
+    left: 25%;
+    background: var(--penguin-skin, gray);
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+  }
+
+  .penguin-bottom {
+    top: 40%;
+    left: 23.5%;
+    background: var(--penguin-skin, gray);
+    width: 53%;
+    height: 45%;
+    border-radius: 70% 70% 100% 100%;
+  }
+
+  .right-hand {
+    top: 5%;
+    left: 25%;
+    background: var(--penguin-skin, black);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(130deg);
+    z-index: -1;
+    animation-duration: 3s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+    transform-origin: 0% 0%;
+    animation-timing-function: linear;
+  }
+
+  @keyframes wave {
+    10% {
+      transform: rotate(110deg);
+    }
+
+    20% {
+      transform: rotate(130deg);
+    }
+
+    30% {
+      transform: rotate(110deg);
+    }
+
+    40% {
+      transform: rotate(130deg);
+    }
+  }
+
+  .left-hand {
+    top: 0%;
+    left: 75%;
+    background: var(--penguin-skin, gray);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-45deg);
+    z-index: -1;
   }
 
   .right-feet {
@@ -335,10 +398,10 @@ class: penguin 的 penguin-beak 改為 orange
 
   .sparkle {
     top: 25%;
-    left: 15%;
+    left: -23%;
     background: white;
-    width: 35%;
-    height: 35%;
+    width: 150%;
+    height: 100%;
     border-radius: 50%;
   }
 
@@ -379,7 +442,7 @@ class: penguin 的 penguin-beak 改為 orange
   }
 
   body {
-    background:#c6faf1;
+    background: #c6faf1;
   }
 
   .penguin * {
