@@ -1,15 +1,24 @@
 <!--題目-->
 <!--
-使用 em tag 為 p 的文字加上斜體
-應該包在 p 標籤內 而不是外面
+使用 rgba 增加背景色
+為 h4 標籤新增 background-color: rgba(45, 45, 45, 0.1)
+把 h4 的 height 刪除
+為 h4 新增 padding 10px
 
-css 是使用 font-style: italic;
+範例:
+rgba stands for:
+  r = red
+  g = green
+  b = blue
+  a = alpha/level of opacity
 -->
 
 <style>
   h4 {
     text-align: center;
     height: 25px;
+
+
   }
   p {
     text-align: justify;
@@ -35,8 +44,9 @@ css 是使用 font-style: italic;
 <div class="fullCard">
   <div class="cardContent">
     <div class="cardText">
-      <h4>Google</h4>
-      <p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p>
+      <h4>Alphabet</h4>
+      <hr>
+      <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
     </div>
     <div class="cardLinks">
       <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" class="links">Larry Page</a><br><br>
@@ -50,7 +60,8 @@ css 是使用 font-style: italic;
 <style>
   h4 {
     text-align: center;
-    height: 25px;
+    padding: 10px;
+    background-color:rgba(45, 45, 45, 0.1);
   }
   p {
     text-align: justify;
@@ -76,7 +87,8 @@ css 是使用 font-style: italic;
 <div class="fullCard">
   <div class="cardContent">
     <div class="cardText">
-      <h4>Google</h4>
+      <h4>Alphabet</h4>
+      <hr>
       <p><em>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</em></p>
     </div>
     <div class="cardLinks">
