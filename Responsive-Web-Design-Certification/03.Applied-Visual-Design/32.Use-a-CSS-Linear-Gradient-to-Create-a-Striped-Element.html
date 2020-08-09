@@ -1,0 +1,52 @@
+<!--題目-->
+<!--
+把 div 
+repeating-linear-gradient 改為 45deg
+0px 應該改為 yellow
+40px 應該改為 yellow 
+第二個 40px 應該改為 black
+最後一個顏色是 black 設為 80px
+-->
+
+<style>
+
+  div{
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin:  50 auto;
+    background: repeating-linear-gradient(
+      90deg,
+      yellow 0px,
+      blue 40px,
+      green 40px,
+      red 80px
+    );
+  }
+
+</style>
+
+<div></div>
+
+
+<!--解答-->
+
+<style>
+
+  div{
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin:  50 auto;
+    background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      yellow 40px,
+      black 40px,
+      black 80px
+    );
+  }
+
+</style>
+
+<div></div>
