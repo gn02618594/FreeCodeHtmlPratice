@@ -1,0 +1,49 @@
+<!--題目-->
+<!--
+transform 有 skewX 可以傾斜 X 軸
+把 id bottom 的 transform 的 skewX 傾斜 24 度
+
+範例:
+p {
+  transform: skewX(-32deg);
+}
+-->
+
+<style>
+  div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+  }
+  #top {
+    background-color: red;
+  }
+  #bottom {
+    background-color: blue;
+
+  }
+</style>
+
+<div id="top"></div>
+<div id="bottom"></div>
+
+
+<!--解答-->
+
+<style>
+  div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+  }
+  #top {
+    background-color: red;
+  }
+  #bottom {
+    background-color: blue;
+    transform: skewX(24deg);
+  }
+</style>
+
+<div id="top"></div>
+<div id="bottom"></div>
