@@ -1,0 +1,50 @@
+<!--題目-->
+<!--
+transform 有 skewY 可以傾斜 Y 軸
+把 id top 的 transform 的 skewY 傾斜 -10 度
+
+範例:
+p {
+  transform: skewY(-10deg);
+}
+-->
+
+<style>
+  div {
+    width: 70%;
+    height: 100px;
+    margin: 50px auto;
+  }
+  #top {
+    background-color: red;
+
+  }
+  #bottom {
+    background-color: blue;
+    transform: skewX(24deg);
+  }
+</style>
+
+<div id="top"></div>
+<div id="bottom"></div>
+
+<!--解答-->
+
+<style>
+  div {
+    width: 70%;
+    height: 100px;
+    margin: 50px auto;
+  }
+  #top {
+    background-color: red;
+    transform: skewY(-10deg);
+  }
+  #bottom {
+    background-color: blue;
+    transform: skewX(24deg);
+  }
+</style>
+
+<div id="top"></div>
+<div id="bottom"></div>

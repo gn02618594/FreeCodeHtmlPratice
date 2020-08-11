@@ -1,0 +1,47 @@
+<!--題目-->
+<!--
+background-color 設為 transparent
+border-radius 設為 50%
+box-shadow 的 offset-x 25px offset-y 10px blur-radius 0 spread-radius 0
+然後設為blue
+
+-->
+
+<style>
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 0px;
+    box-shadow: 25px 10px 10px 10px green;
+  }
+
+</style>
+<div class="center"></div>
+
+<!--解答-->
+
+<style>
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px blue;
+  }
+
+
+</style>
+<div class="center"></div>
