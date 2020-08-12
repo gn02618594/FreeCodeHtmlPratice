@@ -1,0 +1,69 @@
+<!--題目-->
+<!--
+當滑鼠停在按鈕上時 使用 @keyframes 動話去改變顏色為 #4791d0 
+並且只使用在 100%
+@keyframes 設定 background-color 這個 animation-name
+並且設定 100% background-color #4791d0
+
+可以使用 @keyframes 去設定按鈕的 hover
+ms 等於毫秒 1000ms 等於 1s
+
+範例:
+<style>
+  img:hover {
+    animation-name: width;
+    animation-duration: 500ms;
+  }
+
+  @keyframes width {
+    100% {
+      width: 40px;
+    }
+  }
+</style>
+
+<img src="https://bit.ly/smallgooglelogo" alt="Google's Logo" />
+-->
+
+<style>
+  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+  }
+
+
+</style>
+
+<button>Register</button>
+
+
+<!--解答-->
+
+<style>
+  button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+  }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+  }
+ @keyframes background-color{
+   100%{
+     background-color: #4791d0;
+   }
+ }
+
+</style>
+
+<button>Register</button>
