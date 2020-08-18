@@ -1,0 +1,44 @@
+<!--題目-->
+<!--
+要有一個 audio tag
+audio 要有結尾標籤
+audio 有一個 controls 屬性
+audio 中要有一個 source tag
+source 要有一個 src 屬性 値是 https://s3.amazonaws.com/freecodecamp/screen-reader.mp3
+source 要有一個 type 屬性，値是 audio/mpeg
+
+範例:
+<audio id="meowClip" controls>
+  <source src="audio/meow.mp3" type="audio/mpeg" />
+  <source src="audio/meow.ogg" type="audio/ogg" />
+</audio>
+-->
+
+<body>
+  <header>
+    <h1>Real Coding Ninjas</h1>
+  </header>
+  <main>
+    <p>A sound clip of Zersiax's screen reader in action.</p>
+
+
+
+  </main>
+</body>
+
+
+<!--解答-->
+
+<body>
+  <header>
+    <h1>Real Coding Ninjas</h1>
+  </header>
+  <main>
+    <p>A sound clip of Zersiax's screen reader in action.</p>
+    <audio controls>
+      <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
+    </audio>
+
+
+  </main>
+</body>
