@@ -1,0 +1,44 @@
+<!--題目-->
+<!--
+可以依照不同大小設定不同屬性
+
+宣告一個 @media hight <= 800px
+當設備 height <= 800px 時 p tag 的 font-size 要 10px 
+當設備 height > 800px 時 p tag 的 font-size 要 20px 
+
+範例:
+@media (max-width: 100px) { /* CSS Rules */ }
+@media (min-height: 350px) { /* CSS Rules */ }
+-->
+
+<style>
+    p {
+      font-size: 20px;
+    }
+  
+    /* Only change code below this line */
+    
+    /* Only change code above this line */
+  </style>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>
+  
+
+
+<!--解答-->
+
+<style>
+    p {
+      font-size: 20px;
+    }
+  
+    /* Only change code below this line */
+    @media(max-height:800px){
+        p{
+            font-size: 10px;
+        }
+    }
+    /* Only change code above this line */
+  </style>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis tempus massa. Aenean erat nisl, gravida vel vestibulum cursus, interdum sit amet lectus. Sed sit amet quam nibh. Suspendisse quis tincidunt nulla. In hac habitasse platea dictumst. Ut sit amet pretium nisl. Vivamus vel mi sem. Aenean sit amet consectetur sem. Suspendisse pretium, purus et gravida consequat, nunc ligula ultricies diam, at aliquet velit libero a dui.</p>  
